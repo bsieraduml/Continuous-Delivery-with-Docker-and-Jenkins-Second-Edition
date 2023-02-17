@@ -61,8 +61,8 @@ podTemplate(podRetention:  onFailure(),
                     // from the HTML publisher plugin
                     // https://www.jenkins.io/doc/pipeline/steps/htmlpublisher/
                     publishHTML (target: [
-                        reportDir: 'Chapter08/sample1/build/reports/tests/checkstyle',
-                        reportFiles: 'index.html',
+                        reportDir: 'Chapter08/sample1/build/reports/checkstyle',
+                        reportFiles: 'checkstyle.html',
                         reportName: "JaCoCo Checkstyle"
                     ])                       
                 }                
