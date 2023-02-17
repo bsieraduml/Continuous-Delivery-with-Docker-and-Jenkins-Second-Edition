@@ -4,7 +4,10 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
-//this comment should stop my pipeline from failing; look it's a public class, makes sense
+/*
+* A public Calculator Service
+* javadoc comments need to be multiline I guess
+*/
 public class Calculator {
         final static int umlNUMBER1 = 3;
 	@Cacheable("sum")
