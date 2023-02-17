@@ -4,7 +4,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
-/*
+/**
 * A public Calculator Service
 * javadoc comments need to be multiline I guess
 */
