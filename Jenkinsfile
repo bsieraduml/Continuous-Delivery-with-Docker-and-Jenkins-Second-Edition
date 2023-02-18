@@ -47,16 +47,16 @@ podTemplate(podRetention:  onFailure(),
                 }
 
                 stage("Checkstyle") {
-                    //try {
+                    try {
                         sh '''
         	            pwd
                		    cd Chapter08/sample1
                 	    ./gradlew checkstyleMain
                         ./gradlew jacocoTestReport
                         '''
-                    //} catch (Exception E) {
-                    //    echo 'Failure detected'
-                    //}
+                    } catch (Exception E) {
+                        echo 'Failure detected'
+                    }
 
                     // from the HTML publisher plugin
                     // https://www.jenkins.io/doc/pipeline/steps/htmlpublisher/
