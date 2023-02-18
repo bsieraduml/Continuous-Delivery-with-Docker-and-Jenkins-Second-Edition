@@ -3,7 +3,7 @@
 
 // Defines a Kubernetes pod template that can be used to create nodes.
 
-podTemplate(podRetention:  onFailure(),
+podTemplate(podRetention:  always(),
     containers: [
     containerTemplate(
         name: 'gradle', image: 'gradle:6.3-jdk14', command: 'sleep', args: '30d'
