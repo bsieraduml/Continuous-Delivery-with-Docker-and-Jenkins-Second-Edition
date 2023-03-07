@@ -24,7 +24,7 @@ public class CalculatorApplication {
 		ClientConfig clientConfig = new ClientConfig();
 		clientConfig.getNetworkConfig().addAddress("hazelcast");
 		//added by ben
-		clientConfig.setClusterName("docker desktop");
+		//clientConfig.getNetworkConfig().setClusterName("docker desktop");
 		return clientConfig;
 	}
 }
