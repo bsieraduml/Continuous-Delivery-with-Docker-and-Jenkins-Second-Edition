@@ -1,5 +1,6 @@
 package com.leszko.calculator;
-
+//added by ben
+import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
 
 import org.springframework.boot.SpringApplication;
@@ -22,6 +23,7 @@ public class CalculatorApplication {
 	public ClientConfig hazelcastClientConfig() {
 		ClientConfig clientConfig = new ClientConfig();
 		clientConfig.getNetworkConfig().addAddress("hazelcast");
+		//added by ben
 		clientConfig.setClusterName("docker desktop");
 		return clientConfig;
 	}
